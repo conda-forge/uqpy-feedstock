@@ -10,7 +10,7 @@ source:
   sha256: 384fe71dd47b3831f71339574936275eaf196d561868d7df445bd2014413fc8d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
 
@@ -20,7 +20,7 @@ requirements:
     - python
   run:
     - fire
-    - matplotlib
+    - matplotlib-base
     - numpy
     - python
     - scikit-learn
