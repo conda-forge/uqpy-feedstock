@@ -5,7 +5,7 @@ Home: https://github.com/SURGroup/UQpy
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: UQpy (Uncertainty Quantification with python) is a general purpose
 Python toolbox for modeling uncertainty in physical and mathematical systems.
