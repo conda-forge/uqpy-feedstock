@@ -28,6 +28,10 @@ requirements:
     - scipy
     - setuptools
 
+test:
+  commands:
+    - test -d /home/conda/feedstock_root/build_artifacts
+
 about:
   home: https://github.com/SURGroup/UQpy
   license: MIT
