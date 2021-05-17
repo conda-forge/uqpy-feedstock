@@ -10,9 +10,9 @@ source:
   sha256: c35c1260004c8e1ebfdcb637e3fdbb59b534f02d543f2afead8e5a9f905b8f44
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: '{{ PYTHON }} setup.py {{ version }} develop -N'
+  script: python setup.py {{ version }} install --single-version-externally-managed --root=/
 
 requirements:
   host:
@@ -23,7 +23,7 @@ requirements:
     - fire
     - matplotlib-base
     - numpy
-    - python >=3.6
+    - python >=3.8
     - scikit-learn
     - scipy
     - setuptools
