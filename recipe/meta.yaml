@@ -1,5 +1,5 @@
 {% set name = "UQpy" %}
-{% set version = "3.1.4" %}
+{% set version = "4.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c35c1260004c8e1ebfdcb637e3fdbb59b534f02d543f2afead8e5a9f905b8f44
+  sha256: fdfd004fc5e1be42ff2d8d0b1a2ba83db2b35324d4504d00e4b27f6af442bea5
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: python setup.py {{ version }} install --single-version-externally-managed --root=/
 
