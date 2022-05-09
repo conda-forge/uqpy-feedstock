@@ -1,5 +1,5 @@
 {% set name = "UQpy" %}
-{% set version = "4.0.1" %}
+{% set version = "4.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 118f6a28847fb5e85859b7b6b3aefc00bc069482ee7754c1e11701c432e05eb7
+  sha256: eea9ebda8ef9ccae70f7f1b4cfc68d5a58ff827a6e14f4409b2b0783fd82a803
 
 build:
   number: 0
