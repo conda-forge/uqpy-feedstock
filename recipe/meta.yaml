@@ -1,5 +1,5 @@
 {% set name = "UQpy" %}
-{% set version = "4.0.3" %}
+{% set version = "4.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3c790b273adaf5e80dd25880a7438d8ad19a84aa7c02670e9779a7818c5f1493
+  sha256: 01fec8ca3764d45285c7e88f8b9f78582ab50ed88ed6219981ed3242e0d499bf
 
 build:
   number: 0
@@ -17,16 +17,17 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
     - setuptools
   run:
     - fire
     - matplotlib-base
     - numpy
-    - python >=3.8
+    - python >=3.9
     - scikit-learn
     - scipy
     - setuptools
+    - beartype ==0.9.1
 
 test:
   commands:
