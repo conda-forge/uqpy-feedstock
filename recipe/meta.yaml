@@ -27,6 +27,8 @@ requirements:
     - scikit-learn
     - scipy
     - setuptools
+    - beartype ==0.9.1
+    - mpi4py
 
 test:
   commands:
