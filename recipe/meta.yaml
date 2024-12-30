@@ -6,30 +6,32 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 967bd06611700a23449fac4db2d27262ac4c6a296c94cb95f258fc421019bd64
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: python setup.py {{ version }} install --single-version-externally-managed --root=/
 
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools
   run:
     - fire
     - matplotlib-base
     - numpy
-    - python >=3.9
+    - python >={{ python_min }}
     - scikit-learn
     - scipy
     - setuptools
     - beartype ==0.9.1
 
 test:
+  requires:
+    - python {{ python_min }}
   commands:
     - test -d /home/conda/feedstock_root/build_artifacts
 
