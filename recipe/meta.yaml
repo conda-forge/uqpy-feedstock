@@ -10,7 +10,7 @@ source:
   sha256: 8913c2d837b2d4d7283d6aaec502f14e3df36580abd4cffd3c4dfa8d7cb20dfa
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: python setup.py {{ version }} install --single-version-externally-managed --root=/
 
@@ -48,3 +48,5 @@ extra:
   recipe-maintainers:
     - volpatto
     - dimtsap
+    - dgiovanis
+    - mds2120
